@@ -6,6 +6,12 @@ cat bashrc.additions >> ~/.bashrc
 #cp ./.gitconfig ~
 #git config --global commit.template ~/.gitmessage
 
+# powerline fonts for zsh agnoster theme
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+cd .. && rm -rf fonts
+
 # oh-my-zsh & plugins
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
 zsh -c 'git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions'
