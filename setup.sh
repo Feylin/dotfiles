@@ -7,7 +7,7 @@ cat bashrc.additions >> ~/.bashrc
 #git config --global commit.template ~/.gitmessage
 
 # powerline fonts for zsh agnoster theme
-git clone https://github.com/powerline/fonts.git
+git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
 ./install.sh
 cd .. && rm -rf fonts
